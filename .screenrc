@@ -1,0 +1,24 @@
+#irritations
+startup_message off
+vbell off
+
+# alerts
+bell_msg 'Bell in window %n'
+activity 'Activity in window %n'
+
+# vim fix
+maptimeout 0
+defc1 off
+
+# More usefulness
+defscrollback 1024
+
+# auto-title
+shelltitle '$ |sh:'
+
+#sudo shell
+bind R screen -t '# |su:' sudo -s
+
+# Info line
+hardstatus alwayslastline
+hardstatus string '%-Lw%50>%n%f* %t%{-}%+Lw%<%= [ %m/%d %c ]'
