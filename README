@@ -1,0 +1,10 @@
+rcfiles
+Author: Daniel Miller
+
+To use, just copy the files into your home directory.
+
+CONTENTS:
+.bashrc
+.pythonrc
+.screenrc
+.vimrc
