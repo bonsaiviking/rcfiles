@@ -61,6 +61,10 @@ case "$TERM" in
 xterm*|rxvt*)
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
+screen*)
+    #screen auto-title:
+    PS1='\[\033k\033\\\]'$PS1
+    ;;
 *)
     ;;
 esac
@@ -134,5 +138,3 @@ function netstate()
     netstat -tunapew | awk '(FNR==2){print $1,$4,$6,$8,$9,$11};/^tcp/{print $1,$4,$5,$6,$7,$9};/^udp/{print $1,$4,$5,"x",$6,$8}' | column -t $@
 }
 
-#screen auto-title:
-PS1='\[\033k\033\\\]'$PS1
