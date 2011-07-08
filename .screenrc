@@ -22,3 +22,9 @@ bind R screen -t '# |su:' sudo -s
 # Info line
 hardstatus alwayslastline
 hardstatus string '%-Lw%50>%n%f* %t%{-}%+Lw%<%= [ %m/%d %c ]'
+
+#mouse fix
+termcapinfo linux|xterm*|rxvt XT
+
+#screen lock after 10 minutes
+idle 600 lockscreen
