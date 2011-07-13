@@ -4,8 +4,6 @@ filetype plugin indent on
 " enable :Man command
 runtime ftplugin/man.vim
 
-set modeline
-
 " indentation the way I like it
 set et ts=4 sw=4 smarttab sts=4 autoindent
 
